@@ -52,7 +52,7 @@
       >
         Nossos Serviços
       </span>
-      <h2 class="text-5xl md:text-6xl font-bold mb-6 text-gray-900">
+      <h2 class="text-4xl md:text-6xl font-bold mb-6 text-gray-900 leading-[1.1] md:leading-tight">
         Como podemos<br />
         <span
           class="bg-gradient-to-r from-cyan-600 via-violet-600 to-mint-600 bg-clip-text text-transparent"

@@ -50,7 +50,7 @@
 
       <!-- Main Heading -->
       <div class="space-y-6">
-        <h2 class="text-5xl md:text-7xl font-bold leading-tight text-gray-900">
+        <h2 class="text-4xl md:text-7xl font-bold leading-[1.1] md:leading-tight text-gray-900">
           Pronto para<br />
           <span
             class="bg-gradient-to-r from-cyan-600 via-violet-600 to-mint-600 bg-clip-text text-transparent"

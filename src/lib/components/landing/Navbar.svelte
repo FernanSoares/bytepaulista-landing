@@ -100,9 +100,7 @@
 
     <!-- Mobile Menu -->
     {#if isMenuOpen}
-      <div
-        class="md:hidden py-6 border-t border-gray-200 animate-fade-in"
-      >
+      <div class="md:hidden py-6 border-t border-gray-200 animate-fade-in">
         <div class="flex flex-col gap-4">
           <a
             href="#services"
