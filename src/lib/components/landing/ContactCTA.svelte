@@ -59,7 +59,7 @@
         </h2>
 
         <p
-          class="text-xl md:text-2xl text-gray-400 max-w-3xl mx-auto leading-relaxed"
+          class="text-xl md:text-2xl text-gray-200 max-w-3xl mx-auto leading-relaxed"
         >
           Sem formulários. Sem burocracia. Fale direto com nossa equipe e receba
           uma proposta personalizada em até 24 horas.
@@ -110,7 +110,7 @@
 
       <!-- Trust Badges -->
       <div
-        class="pt-12 flex flex-col sm:flex-row items-center justify-center gap-8 text-gray-400"
+        class="pt-12 flex flex-col sm:flex-row items-center justify-center gap-8 text-gray-300"
       >
         <div class="flex items-center gap-2">
           <svg

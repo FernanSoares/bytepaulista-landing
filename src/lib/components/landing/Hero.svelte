@@ -48,7 +48,7 @@
       <!-- Main Heading -->
       <h1 class="text-6xl md:text-8xl font-bold leading-[1.1] tracking-tight">
         Transformamos<br />
-        <span class="text-gray-500">suas ideias em</span><br />
+        <span class="text-gray-400">suas ideias em</span><br />
         <span
           class="bg-gradient-to-r from-cyan-400 via-violet-400 to-mint-400 bg-clip-text text-transparent"
         >
@@ -57,7 +57,7 @@
       </h1>
 
       <!-- Description -->
-      <p class="text-xl md:text-2xl text-gray-400 max-w-3xl leading-relaxed">
+      <p class="text-xl md:text-2xl text-gray-200 max-w-3xl leading-relaxed">
         Somos especialistas em criar produtos digitais excepcionais. Do conceito
         à execução, desenvolvemos soluções que <strong
           class="text-white font-semibold">transformam negócios</strong
@@ -109,7 +109,7 @@
             100+
           </div>
           <div
-            class="text-sm text-gray-500 uppercase tracking-wider font-medium"
+            class="text-sm text-gray-400 uppercase tracking-wider font-medium"
           >
             Projetos Entregues
           </div>
@@ -121,7 +121,7 @@
             50+
           </div>
           <div
-            class="text-sm text-gray-500 uppercase tracking-wider font-medium"
+            class="text-sm text-gray-400 uppercase tracking-wider font-medium"
           >
             Clientes Satisfeitos
           </div>
@@ -133,7 +133,7 @@
             5+
           </div>
           <div
-            class="text-sm text-gray-500 uppercase tracking-wider font-medium"
+            class="text-sm text-gray-400 uppercase tracking-wider font-medium"
           >
             Anos no Mercado
           </div>

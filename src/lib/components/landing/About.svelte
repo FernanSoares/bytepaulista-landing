@@ -61,7 +61,7 @@
           </h2>
         </div>
 
-        <div class="space-y-6 text-xl text-gray-400 leading-relaxed">
+        <div class="space-y-6 text-xl text-gray-300 leading-relaxed">
           <p>
             Uma <strong class="text-white font-semibold"
               >software house paulistana</strong
@@ -128,7 +128,7 @@
                   {value.title}
                 </h3>
               </div>
-              <p class="text-gray-400 leading-relaxed">
+              <p class="text-gray-300 leading-relaxed">
                 {value.description}
               </p>
             </div>

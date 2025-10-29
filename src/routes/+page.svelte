@@ -40,7 +40,7 @@
               BytePaulista
             </span>
           </div>
-          <p class="text-gray-400 leading-relaxed">
+          <p class="text-gray-300 leading-relaxed">
             Transformando ideias em produtos digitais excepcionais desde 2020.
           </p>
           <div class="flex gap-4">
@@ -89,7 +89,7 @@
         <!-- Services -->
         <div>
           <h4 class="font-bold text-white mb-6 text-lg">Serviços</h4>
-          <ul class="space-y-3 text-gray-400">
+          <ul class="space-y-3 text-gray-300">
             <li>
               <a
                 href="#services"
@@ -129,7 +129,7 @@
         <!-- Company -->
         <div>
           <h4 class="font-bold text-white mb-6 text-lg">Empresa</h4>
-          <ul class="space-y-3 text-gray-400">
+          <ul class="space-y-3 text-gray-300">
             <li>
               <a
                 href="#about"
@@ -169,7 +169,7 @@
         <!-- Contact -->
         <div>
           <h4 class="font-bold text-white mb-6 text-lg">Contato</h4>
-          <ul class="space-y-3 text-gray-400">
+          <ul class="space-y-3 text-gray-300">
             <li class="flex items-start gap-2">
               <svg
                 class="w-5 h-5 text-cyan-400 mt-0.5"
@@ -236,7 +236,7 @@
 
       <!-- Bottom Bar -->
       <div
-        class="pt-8 border-t border-cyan-500/10 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-400"
+        class="pt-8 border-t border-cyan-500/10 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-300"
       >
         <p>© 2025 BytePaulista. Todos os direitos reservados.</p>
         <p class="flex items-center gap-2">

@@ -54,9 +54,9 @@
       </span>
       <h2 class="text-5xl md:text-6xl font-bold mb-6">
         Como podemos<br />
-        <span class="text-gray-500">impulsionar seu negócio</span>
+        <span class="text-gray-400">impulsionar seu negócio</span>
       </h2>
-      <p class="text-xl text-gray-400 leading-relaxed">
+      <p class="text-xl text-gray-300 leading-relaxed">
         Combinamos estratégia, design e tecnologia de ponta para criar soluções
         que fazem a diferença real no seu mercado.
       </p>
@@ -93,7 +93,7 @@
                   {service.title}
                 </h3>
               </div>
-              <p class="text-lg text-gray-400 leading-relaxed">
+              <p class="text-lg text-gray-300 leading-relaxed">
                 {service.description}
               </p>
             </div>
