@@ -103,6 +103,13 @@
       <div class="md:hidden py-6 border-t border-gray-200 animate-fade-in">
         <div class="flex flex-col gap-4">
           <a
+            href="#"
+            onclick={closeMenu}
+            class="text-gray-700 hover:text-cyan-600 transition-colors font-medium py-3 px-4 hover:bg-cyan-50 rounded-lg"
+          >
+            Home
+          </a>
+          <a
             href="#services"
             onclick={closeMenu}
             class="text-gray-700 hover:text-cyan-600 transition-colors font-medium py-3 px-4 hover:bg-cyan-50 rounded-lg"
