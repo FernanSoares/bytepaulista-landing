@@ -4,29 +4,29 @@
 
 <section
   id="contact"
-  class="relative py-32 px-6 md:px-12 overflow-hidden"
+  class="relative py-32 px-6 md:px-12 overflow-hidden bg-gradient-to-br from-gray-50 via-white to-cyan-50"
   in:fly={{ y: 20, duration: 500, delay: 600 }}
 >
   <!-- Animated Background -->
   <div class="absolute inset-0 -z-10">
     <!-- Gradient Overlay -->
     <div
-      class="absolute inset-0 bg-gradient-to-br from-cyan-500/20 via-violet-500/20 to-mint-500/20"
+      class="absolute inset-0 bg-gradient-to-br from-cyan-400/10 via-violet-400/10 to-mint-400/10"
     ></div>
 
     <!-- Animated Orbs -->
     <div class="absolute top-0 left-0 w-full h-full overflow-hidden">
       <div
-        class="absolute top-1/4 left-1/4 w-96 h-96 bg-cyan-500/30 rounded-full blur-3xl animate-pulse"
+        class="absolute top-1/4 left-1/4 w-96 h-96 bg-cyan-400/15 rounded-full blur-3xl animate-pulse"
       ></div>
       <div
-        class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-violet-500/30 rounded-full blur-3xl animate-pulse delay-700"
+        class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-violet-400/15 rounded-full blur-3xl animate-pulse delay-700"
       ></div>
     </div>
 
     <!-- Grid Pattern -->
     <div
-      class="absolute inset-0 bg-[linear-gradient(to_right,#00D9FF15_1px,transparent_1px),linear-gradient(to_bottom,#00D9FF15_1px,transparent_1px)] bg-[size:4rem_4rem]"
+      class="absolute inset-0 bg-[linear-gradient(to_right,#00D9FF08_1px,transparent_1px),linear-gradient(to_bottom,#00D9FF08_1px,transparent_1px)] bg-[size:4rem_4rem]"
     ></div>
   </div>
 
@@ -34,24 +34,24 @@
     <div class="max-w-5xl mx-auto text-center space-y-12">
       <!-- Badge -->
       <div
-        class="inline-flex items-center gap-2 px-5 py-2.5 bg-navy-800/50 backdrop-blur-sm border border-cyan-500/20 rounded-full text-sm font-medium"
+        class="inline-flex items-center gap-2 px-5 py-2.5 bg-gradient-to-r from-cyan-500/10 to-violet-500/10 backdrop-blur-sm border border-cyan-500/30 rounded-full text-sm font-medium shadow-sm"
       >
         <span class="relative flex h-3 w-3">
           <span
-            class="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75"
+            class="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-500 opacity-75"
           ></span>
-          <span class="relative inline-flex rounded-full h-3 w-3 bg-cyan-500"
+          <span class="relative inline-flex rounded-full h-3 w-3 bg-cyan-600"
           ></span>
         </span>
-        <span class="text-gray-300">Estamos prontos para ajudar</span>
+        <span class="text-cyan-700 font-semibold">Estamos prontos para ajudar</span>
       </div>
 
       <!-- Main Heading -->
       <div class="space-y-6">
-        <h2 class="text-5xl md:text-7xl font-bold leading-tight">
+        <h2 class="text-5xl md:text-7xl font-bold leading-tight text-gray-900">
           Pronto para<br />
           <span
-            class="bg-gradient-to-r from-cyan-400 via-violet-400 to-mint-400 bg-clip-text text-transparent"
+            class="bg-gradient-to-r from-cyan-600 via-violet-600 to-mint-600 bg-clip-text text-transparent"
           >
             transformar sua ideia
           </span><br />
@@ -59,7 +59,7 @@
         </h2>
 
         <p
-          class="text-xl md:text-2xl text-gray-200 max-w-3xl mx-auto leading-relaxed"
+          class="text-xl md:text-2xl text-gray-700 max-w-3xl mx-auto leading-relaxed"
         >
           Sem formulários. Sem burocracia. Fale direto com nossa equipe e receba
           uma proposta personalizada em até 24 horas.
@@ -72,7 +72,7 @@
           href="https://wa.me/5511999999999?text=Olá! Gostaria de desenvolver um projeto com a BytePaulista."
           target="_blank"
           rel="noopener noreferrer"
-          class="group relative inline-flex items-center justify-center px-10 py-5 bg-gradient-to-r from-cyan-500 to-violet-500 hover:from-cyan-400 hover:to-violet-400 text-white font-bold rounded-full transition-all transform hover:scale-105 shadow-2xl shadow-cyan-500/30 text-lg overflow-hidden"
+          class="group relative inline-flex items-center justify-center px-10 py-5 bg-gradient-to-r from-cyan-600 to-violet-600 hover:from-cyan-500 hover:to-violet-500 text-white font-bold rounded-full transition-all transform hover:scale-105 shadow-2xl hover:shadow-cyan-600/40 text-lg overflow-hidden"
         >
           <span class="relative z-10 flex items-center gap-3">
             <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -89,7 +89,7 @@
 
         <a
           href="mailto:contato@bytepaulista.com.br"
-          class="inline-flex items-center justify-center px-10 py-5 border-2 border-cyan-500/30 hover:border-cyan-500 hover:bg-cyan-500/10 text-white font-bold rounded-full transition-all text-lg backdrop-blur-sm group"
+          class="inline-flex items-center justify-center px-10 py-5 border-2 border-gray-300 hover:border-cyan-600 hover:bg-cyan-50 text-gray-900 font-bold rounded-full transition-all text-lg group"
         >
           <svg
             class="w-6 h-6 mr-3 group-hover:scale-110 transition-transform"
@@ -110,7 +110,7 @@
 
       <!-- Trust Badges -->
       <div
-        class="pt-12 flex flex-col sm:flex-row items-center justify-center gap-8 text-gray-300"
+        class="pt-12 flex flex-col sm:flex-row items-center justify-center gap-8 text-gray-700"
       >
         <div class="flex items-center gap-2">
           <svg

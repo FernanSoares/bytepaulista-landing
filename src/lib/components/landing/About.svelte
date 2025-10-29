@@ -28,16 +28,16 @@
 
 <section
   id="about"
-  class="relative py-32 px-6 md:px-12 overflow-hidden"
+  class="relative py-32 px-6 md:px-12 overflow-hidden bg-white"
   in:fly={{ y: 20, duration: 500, delay: 400 }}
 >
   <!-- Background -->
   <div class="absolute inset-0 -z-10">
     <div
-      class="absolute top-1/2 left-0 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl"
+      class="absolute top-1/2 left-0 w-96 h-96 bg-cyan-400/10 rounded-full blur-3xl"
     ></div>
     <div
-      class="absolute bottom-0 right-0 w-96 h-96 bg-violet-500/10 rounded-full blur-3xl"
+      class="absolute bottom-0 right-0 w-96 h-96 bg-violet-400/10 rounded-full blur-3xl"
     ></div>
   </div>
 
@@ -47,23 +47,23 @@
       <div class="space-y-8">
         <div>
           <span
-            class="inline-block px-4 py-1.5 bg-violet-500/10 border border-violet-500/20 rounded-full text-violet-400 font-semibold text-sm uppercase tracking-wider mb-6"
+            class="inline-block px-4 py-1.5 bg-gradient-to-r from-violet-500/10 to-mint-500/10 border border-violet-500/30 rounded-full text-violet-700 font-semibold text-sm uppercase tracking-wider mb-6 shadow-sm"
           >
             Sobre Nós
           </span>
-          <h2 class="text-5xl md:text-6xl font-bold mb-6">
+          <h2 class="text-5xl md:text-6xl font-bold mb-6 text-gray-900">
             Somos a<br />
             <span
-              class="bg-gradient-to-r from-cyan-400 via-violet-400 to-mint-400 bg-clip-text text-transparent"
+              class="bg-gradient-to-r from-cyan-600 via-violet-600 to-mint-600 bg-clip-text text-transparent"
             >
               BytePaulista
             </span>
           </h2>
         </div>
 
-        <div class="space-y-6 text-xl text-gray-300 leading-relaxed">
+        <div class="space-y-6 text-xl text-gray-700 leading-relaxed">
           <p>
-            Uma <strong class="text-white font-semibold"
+            Uma <strong class="text-gray-900 font-semibold"
               >software house paulistana</strong
             >
             especializada em criar soluções digitais que transformam negócios e conectam
@@ -71,10 +71,10 @@
           </p>
 
           <p>
-            Combinamos <strong class="text-white font-semibold"
+            Combinamos <strong class="text-gray-900 font-semibold"
               >design excepcional</strong
             >
-            com <strong class="text-white font-semibold">código robusto</strong>
+            com <strong class="text-gray-900 font-semibold">código robusto</strong>
             para entregar produtos que geram resultados mensuráveis e duradouros.
           </p>
 
@@ -88,7 +88,7 @@
         <div class="pt-4">
           <a
             href="#contact"
-            class="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 font-semibold text-lg group transition-colors"
+            class="inline-flex items-center gap-2 text-cyan-600 hover:text-cyan-700 font-semibold text-lg group transition-colors"
           >
             Vamos conversar sobre seu projeto
             <svg
@@ -112,7 +112,7 @@
       <div class="space-y-6">
         {#each values as value}
           <div
-            class="group relative p-8 bg-navy-900/30 backdrop-blur-sm border border-cyan-500/10 hover:border-cyan-500/30 rounded-2xl transition-all duration-300 hover:transform hover:scale-[1.02]"
+            class="group relative p-8 bg-gradient-to-br from-gray-50 to-white backdrop-blur-sm border border-gray-200 hover:border-cyan-500 hover:shadow-lg rounded-2xl transition-all duration-300 hover:transform hover:scale-[1.02]"
           >
             <!-- Gradient Overlay on Hover -->
             <div
@@ -123,12 +123,12 @@
               <div class="flex items-center gap-4 mb-4">
                 <div class="text-5xl">{value.icon}</div>
                 <h3
-                  class="text-2xl font-bold group-hover:bg-gradient-to-r group-hover:{value.gradient} group-hover:bg-clip-text group-hover:text-transparent transition-all duration-300"
+                  class="text-2xl font-bold text-gray-900 group-hover:bg-gradient-to-r group-hover:{value.gradient} group-hover:bg-clip-text group-hover:text-transparent transition-all duration-300"
                 >
                   {value.title}
                 </h3>
               </div>
-              <p class="text-gray-300 leading-relaxed">
+              <p class="text-gray-700 leading-relaxed">
                 {value.description}
               </p>
             </div>

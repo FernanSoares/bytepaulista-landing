@@ -12,6 +12,6 @@
   />
 </svelte:head>
 
-<div class="min-h-screen bg-navy-950 text-white">
+<div class="min-h-screen bg-white text-gray-900">
   {@render children()}
 </div>

@@ -34,13 +34,13 @@
 
 <section
   id="services"
-  class="relative py-32 px-6 md:px-12 overflow-hidden"
+  class="relative py-32 px-6 md:px-12 overflow-hidden bg-gray-50"
   in:fly={{ y: 20, duration: 500, delay: 200 }}
 >
   <!-- Background -->
   <div class="absolute inset-0 -z-10">
     <div
-      class="absolute top-0 right-0 w-96 h-96 bg-violet-500/10 rounded-full blur-3xl"
+      class="absolute top-0 right-0 w-96 h-96 bg-violet-400/10 rounded-full blur-3xl"
     ></div>
   </div>
 
@@ -48,15 +48,15 @@
     <!-- Header -->
     <div class="max-w-3xl mb-24">
       <span
-        class="inline-block px-4 py-1.5 bg-cyan-500/10 border border-cyan-500/20 rounded-full text-cyan-400 font-semibold text-sm uppercase tracking-wider mb-6"
+        class="inline-block px-4 py-1.5 bg-gradient-to-r from-cyan-500/10 to-violet-500/10 border border-cyan-500/30 rounded-full text-cyan-700 font-semibold text-sm uppercase tracking-wider mb-6 shadow-sm"
       >
         Nossos Serviços
       </span>
-      <h2 class="text-5xl md:text-6xl font-bold mb-6">
+      <h2 class="text-5xl md:text-6xl font-bold mb-6 text-gray-900">
         Como podemos<br />
-        <span class="text-gray-400">impulsionar seu negócio</span>
+        <span class="text-gray-600">impulsionar seu negócio</span>
       </h2>
-      <p class="text-xl text-gray-300 leading-relaxed">
+      <p class="text-xl text-gray-700 leading-relaxed">
         Combinamos estratégia, design e tecnologia de ponta para criar soluções
         que fazem a diferença real no seu mercado.
       </p>
@@ -66,18 +66,18 @@
     <div class="space-y-0">
       {#each services as service, index (service.number)}
         <div
-          class="group relative border-t border-cyan-500/10 py-12 transition-all duration-500 hover:bg-navy-900/30"
+          class="group relative border-t border-gray-200 py-12 transition-all duration-500 hover:bg-white hover:shadow-md rounded-lg"
         >
           <!-- Hover Gradient Line -->
           <div
-            class="absolute top-0 left-0 h-[1px] w-0 bg-gradient-to-r {service.gradient} group-hover:w-full transition-all duration-700"
+            class="absolute top-0 left-0 h-[2px] w-0 bg-gradient-to-r {service.gradient} group-hover:w-full transition-all duration-700"
           ></div>
 
-          <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+          <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start px-4">
             <!-- Number & Icon -->
             <div class="md:col-span-2 flex items-center gap-4">
               <span
-                class="text-7xl font-bold bg-gradient-to-br {service.gradient} bg-clip-text text-transparent opacity-20 group-hover:opacity-100 transition-opacity duration-500"
+                class="text-7xl font-bold bg-gradient-to-br {service.gradient} bg-clip-text text-transparent opacity-30 group-hover:opacity-100 transition-opacity duration-500"
               >
                 {service.number}
               </span>
@@ -88,12 +88,12 @@
               <div class="flex items-center gap-3">
                 <span class="text-4xl">{service.icon}</span>
                 <h3
-                  class="text-3xl font-bold group-hover:bg-gradient-to-r group-hover:{service.gradient} group-hover:bg-clip-text group-hover:text-transparent transition-all duration-300"
+                  class="text-3xl font-bold text-gray-900 group-hover:bg-gradient-to-r group-hover:{service.gradient} group-hover:bg-clip-text group-hover:text-transparent transition-all duration-300"
                 >
                   {service.title}
                 </h3>
               </div>
-              <p class="text-lg text-gray-300 leading-relaxed">
+              <p class="text-lg text-gray-700 leading-relaxed">
                 {service.description}
               </p>
             </div>
@@ -102,7 +102,7 @@
             <div class="md:col-span-4 flex flex-wrap gap-2">
               {#each service.tags as tag}
                 <span
-                  class="px-4 py-2 bg-navy-800/50 border border-cyan-500/10 hover:border-cyan-500/30 text-sm font-medium rounded-full text-gray-300 hover:text-white transition-all backdrop-blur-sm"
+                  class="px-4 py-2 bg-white border border-gray-200 hover:border-cyan-500 text-sm font-medium rounded-full text-gray-700 hover:text-cyan-600 transition-all shadow-sm"
                 >
                   {tag}
                 </span>
@@ -115,7 +115,7 @@
             class="absolute right-8 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 group-hover:translate-x-2 transition-all duration-300"
           >
             <svg
-              class="w-8 h-8 text-cyan-400"
+              class="w-8 h-8 text-cyan-600"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
