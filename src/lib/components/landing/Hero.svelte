@@ -99,7 +99,7 @@
         <!-- Main Heading -->
         <h1
           in:fly={{ y: 20, duration: 600, delay: 200 }}
-          class="text-5xl md:text-7xl font-bold leading-tight tracking-normal text-gray-900"
+          class="text-4xl md:text-6xl font-bold leading-tight tracking-normal text-gray-900"
         >
           Transformamos<br />
           <span
@@ -113,7 +113,7 @@
         <!-- Description -->
         <p
           in:fly={{ y: 20, duration: 600, delay: 300 }}
-          class="text-xl md:text-2xl text-gray-700 max-w-3xl leading-relaxed"
+          class="text-lg md:text-xl text-gray-700 max-w-3xl leading-relaxed"
         >
           Somos especialistas em criar produtos digitais excepcionais. Do
           conceito à execução, desenvolvemos soluções que <strong
@@ -162,7 +162,7 @@
         </div>
 
         <!-- Stats -->
-        <div 
+        <div
           in:fly={{ y: 20, duration: 600, delay: 500 }}
           class="grid grid-cols-3 gap-8 pt-16 border-t border-gray-200"
         >
@@ -219,44 +219,113 @@
 
         <!-- Floating Cards -->
         <div class="relative h-full">
-          {#each floatingCards as card, i}
+          <!-- Card 1 - Performance -->
+          <div
+            in:fly={{ y: 50, duration: 600, delay: 0 }}
+            class="absolute animate-float top-[5%] left-[15%]"
+            style="animation-delay: 0s;"
+          >
             <div
-              in:fly={{ y: 50, duration: 600, delay: card.delay }}
-              class="absolute animate-float"
-              style="
-                top: {(i % 3) * 30 + 10}%;
-                left: {(i % 2) * 50 + 10}%;
-                animation-delay: {i * 0.5}s;
-              "
+              class="group relative p-6 bg-white/80 backdrop-blur-md border border-gray-200 hover:border-cyan-400 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 hover:scale-105"
             >
-              <div
-                class="group relative p-6 bg-white/80 backdrop-blur-md border border-gray-200 hover:border-cyan-400 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 hover:scale-105"
-              >
-                <!-- Gradient Overlay on Hover -->
-                <div
-                  class="absolute inset-0 bg-gradient-to-br {card.gradient} opacity-0 group-hover:opacity-10 rounded-2xl transition-opacity duration-300"
-                ></div>
-
-                <div class="relative z-10 flex flex-col items-center gap-3">
-                  <div
-                    class="text-4xl group-hover:scale-125 transition-transform duration-300"
-                  >
-                    {card.icon}
-                  </div>
-                  <div
-                    class="text-sm font-bold text-gray-900 group-hover:bg-gradient-to-r group-hover:{card.gradient} group-hover:bg-clip-text group-hover:text-transparent transition-all duration-300"
-                  >
-                    {card.text}
-                  </div>
-                </div>
-
-                <!-- Shine Effect -->
-                <div
-                  class="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000 rounded-2xl"
-                ></div>
+              <div class="absolute inset-0 bg-gradient-to-br from-cyan-500/10 to-cyan-600/10 opacity-0 group-hover:opacity-100 rounded-2xl transition-opacity duration-300"></div>
+              <div class="relative z-10 flex flex-col items-center gap-3">
+                <div class="text-4xl group-hover:scale-125 transition-transform duration-300">⚡</div>
+                <div class="text-sm font-bold text-gray-900 group-hover:text-cyan-600 transition-colors duration-300">Performance</div>
               </div>
+              <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000 rounded-2xl"></div>
             </div>
-          {/each}
+          </div>
+
+          <!-- Card 2 - Design -->
+          <div
+            in:fly={{ y: 50, duration: 600, delay: 200 }}
+            class="absolute animate-float top-[15%] right-[10%]"
+            style="animation-delay: 0.5s;"
+          >
+            <div
+              class="group relative p-6 bg-white/80 backdrop-blur-md border border-gray-200 hover:border-violet-400 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 hover:scale-105"
+            >
+              <div class="absolute inset-0 bg-gradient-to-br from-violet-500/10 to-violet-600/10 opacity-0 group-hover:opacity-100 rounded-2xl transition-opacity duration-300"></div>
+              <div class="relative z-10 flex flex-col items-center gap-3">
+                <div class="text-4xl group-hover:scale-125 transition-transform duration-300">🎨</div>
+                <div class="text-sm font-bold text-gray-900 group-hover:text-violet-600 transition-colors duration-300">Design</div>
+              </div>
+              <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000 rounded-2xl"></div>
+            </div>
+          </div>
+
+          <!-- Card 3 - Inovação -->
+          <div
+            in:fly={{ y: 50, duration: 600, delay: 400 }}
+            class="absolute animate-float top-[40%] left-[5%]"
+            style="animation-delay: 1s;"
+          >
+            <div
+              class="group relative p-6 bg-white/80 backdrop-blur-md border border-gray-200 hover:border-mint-400 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 hover:scale-105"
+            >
+              <div class="absolute inset-0 bg-gradient-to-br from-mint-500/10 to-mint-600/10 opacity-0 group-hover:opacity-100 rounded-2xl transition-opacity duration-300"></div>
+              <div class="relative z-10 flex flex-col items-center gap-3">
+                <div class="text-4xl group-hover:scale-125 transition-transform duration-300">🚀</div>
+                <div class="text-sm font-bold text-gray-900 group-hover:text-mint-600 transition-colors duration-300">Inovação</div>
+              </div>
+              <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000 rounded-2xl"></div>
+            </div>
+          </div>
+
+          <!-- Card 4 - Qualidade -->
+          <div
+            in:fly={{ y: 50, duration: 600, delay: 600 }}
+            class="absolute animate-float top-[48%] right-[20%]"
+            style="animation-delay: 1.5s;"
+          >
+            <div
+              class="group relative p-6 bg-white/80 backdrop-blur-md border border-gray-200 hover:border-cyan-400 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 hover:scale-105"
+            >
+              <div class="absolute inset-0 bg-gradient-to-br from-cyan-500/10 to-violet-500/10 opacity-0 group-hover:opacity-100 rounded-2xl transition-opacity duration-300"></div>
+              <div class="relative z-10 flex flex-col items-center gap-3">
+                <div class="text-4xl group-hover:scale-125 transition-transform duration-300">✨</div>
+                <div class="text-sm font-bold text-gray-900 group-hover:text-cyan-600 transition-colors duration-300">Qualidade</div>
+              </div>
+              <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000 rounded-2xl"></div>
+            </div>
+          </div>
+
+          <!-- Card 5 - Escalável -->
+          <div
+            in:fly={{ y: 50, duration: 600, delay: 800 }}
+            class="absolute animate-float top-[72%] left-[25%]"
+            style="animation-delay: 2s;"
+          >
+            <div
+              class="group relative p-6 bg-white/80 backdrop-blur-md border border-gray-200 hover:border-violet-400 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 hover:scale-105"
+            >
+              <div class="absolute inset-0 bg-gradient-to-br from-violet-500/10 to-mint-500/10 opacity-0 group-hover:opacity-100 rounded-2xl transition-opacity duration-300"></div>
+              <div class="relative z-10 flex flex-col items-center gap-3">
+                <div class="text-4xl group-hover:scale-125 transition-transform duration-300">📈</div>
+                <div class="text-sm font-bold text-gray-900 group-hover:text-violet-600 transition-colors duration-300">Escalável</div>
+              </div>
+              <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000 rounded-2xl"></div>
+            </div>
+          </div>
+
+          <!-- Card 6 - Suporte -->
+          <div
+            in:fly={{ y: 50, duration: 600, delay: 1000 }}
+            class="absolute animate-float top-[80%] right-[8%]"
+            style="animation-delay: 2.5s;"
+          >
+            <div
+              class="group relative p-6 bg-white/80 backdrop-blur-md border border-gray-200 hover:border-mint-400 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 hover:scale-105"
+            >
+              <div class="absolute inset-0 bg-gradient-to-br from-mint-500/10 to-cyan-500/10 opacity-0 group-hover:opacity-100 rounded-2xl transition-opacity duration-300"></div>
+              <div class="relative z-10 flex flex-col items-center gap-3">
+                <div class="text-4xl group-hover:scale-125 transition-transform duration-300">💬</div>
+                <div class="text-sm font-bold text-gray-900 group-hover:text-mint-600 transition-colors duration-300">Suporte</div>
+              </div>
+              <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000 rounded-2xl"></div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
