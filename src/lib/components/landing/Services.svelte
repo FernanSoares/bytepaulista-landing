@@ -54,7 +54,11 @@
       </span>
       <h2 class="text-5xl md:text-6xl font-bold mb-6 text-gray-900">
         Como podemos<br />
-        <span class="text-gray-600">impulsionar seu negócio</span>
+        <span
+          class="bg-gradient-to-r from-cyan-600 via-violet-600 to-mint-600 bg-clip-text text-transparent"
+        >
+          impulsionar seu negócio
+        </span>
       </h2>
       <p class="text-xl text-gray-700 leading-relaxed">
         Combinamos estratégia, design e tecnologia de ponta para criar soluções

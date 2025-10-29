@@ -59,12 +59,12 @@
         class="text-5xl md:text-7xl font-bold leading-tight tracking-normal text-gray-900"
       >
         Transformamos<br />
-        <span class="text-gray-500 font-semibold">suas ideias em</span><br />
         <span
           class="bg-gradient-to-r from-cyan-600 via-violet-600 to-mint-600 bg-clip-text text-transparent font-bold"
         >
-          realidade digital
-        </span>
+          suas ideias em
+        </span><br />
+        realidade digital
       </h1>
 
       <!-- Description -->
