@@ -3,20 +3,29 @@
 </script>
 
 <section
-  class="relative min-h-screen flex items-center px-6 md:px-12 overflow-hidden bg-gradient-to-br from-gray-50 via-white to-cyan-50"
+  class="relative min-h-screen flex items-center px-6 md:px-12 pt-32 overflow-hidden bg-gradient-to-br from-gray-50 via-white to-cyan-50"
   in:fly={{ y: 20, duration: 500 }}
 >
   <!-- Animated Background -->
   <div class="absolute inset-0 -z-10">
-    <!-- Gradient Orbs -->
+    <!-- Gradient Orbs - Pontos de Luz -->
     <div
-      class="absolute top-1/4 left-1/4 w-96 h-96 bg-cyan-400/10 rounded-full blur-3xl animate-pulse"
+      class="absolute top-20 left-10 w-64 h-64 bg-cyan-400/20 rounded-full blur-3xl animate-pulse"
     ></div>
     <div
-      class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-violet-400/10 rounded-full blur-3xl animate-pulse delay-700"
+      class="absolute top-40 right-20 w-96 h-96 bg-violet-400/15 rounded-full blur-3xl animate-pulse delay-700"
     ></div>
     <div
-      class="absolute top-1/2 right-1/3 w-72 h-72 bg-mint-400/10 rounded-full blur-3xl animate-pulse delay-1000"
+      class="absolute bottom-40 left-1/4 w-80 h-80 bg-cyan-500/15 rounded-full blur-3xl animate-pulse delay-1000"
+    ></div>
+    <div
+      class="absolute top-1/3 right-1/4 w-72 h-72 bg-mint-400/20 rounded-full blur-3xl animate-pulse"
+    ></div>
+    <div
+      class="absolute bottom-20 right-10 w-96 h-96 bg-violet-500/10 rounded-full blur-3xl animate-pulse delay-700"
+    ></div>
+    <div
+      class="absolute top-1/2 left-1/3 w-60 h-60 bg-cyan-300/25 rounded-full blur-2xl animate-pulse delay-1000"
     ></div>
 
     <!-- Grid Pattern -->
@@ -47,7 +56,7 @@
 
       <!-- Main Heading -->
       <h1
-        class="text-6xl md:text-8xl font-bold leading-tight tracking-normal text-gray-900"
+        class="text-5xl md:text-7xl font-bold leading-tight tracking-normal text-gray-900"
       >
         Transformamos<br />
         <span class="text-gray-500 font-semibold">suas ideias em</span><br />
