@@ -1,0 +1,53 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# Source files
+*.ts text eol=lf
+*.js text eol=lf
+*.svelte text eol=lf
+*.html text eol=lf
+*.css text eol=lf
+*.json text eol=lf
+*.md text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+
+# Scripts
+*.sh text eol=lf
+
+# Documentation
+*.md diff=markdown
+
+# Graphics
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.svg text
+
+# Archives
+*.zip binary
+*.tar binary
+*.gz binary
+*.tgz binary
+
+# Fonts
+*.woff binary
+*.woff2 binary
+*.ttf binary
+*.otf binary
+*.eot binary
+
+# Exclude files from exporting
+.gitattributes export-ignore
+.gitignore export-ignore
+.vscode export-ignore
+.cursor export-ignore
+docs export-ignore
+
+# Linguist
+*.md linguist-detectable=false
+*.svg linguist-detectable=false
+package-lock.json linguist-generated=true
+
