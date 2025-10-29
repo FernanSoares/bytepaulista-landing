@@ -113,11 +113,11 @@
       <div class="space-y-6">
         {#each values as value}
           <div
-            class="group relative p-8 bg-gray-50 hover:bg-gray-50 border border-gray-200 hover:border-cyan-500 hover:shadow-lg rounded-2xl transition-all duration-300 hover:transform hover:scale-[1.02]"
+            class="group relative p-8 bg-gray-50 backdrop-blur-sm border border-gray-200 hover:border-cyan-500 hover:shadow-lg rounded-2xl transition-all duration-300 hover:transform hover:scale-[1.02]"
           >
             <!-- Gradient Overlay on Hover -->
             <div
-              class="absolute inset-0 bg-gradient-to-br {value.gradient} opacity-0 group-hover:opacity-[0.03] rounded-2xl transition-opacity duration-300 pointer-events-none"
+              class="absolute inset-0 bg-gradient-to-br {value.gradient} opacity-0 group-hover:opacity-5 rounded-2xl transition-opacity duration-300"
             ></div>
 
             <div class="relative z-10">
