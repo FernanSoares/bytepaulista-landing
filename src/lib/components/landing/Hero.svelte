@@ -99,7 +99,7 @@
         <!-- Main Heading -->
         <h1
           in:fly={{ y: 20, duration: 600, delay: 200 }}
-          class="text-5xl md:text-6xl font-bold leading-tight tracking-normal text-gray-900"
+          class="text-4xl md:text-6xl font-bold leading-[1.1] md:leading-tight tracking-normal text-gray-900"
         >
           Transformamos<br />
           <span
