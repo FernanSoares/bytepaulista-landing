@@ -18,7 +18,7 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: #070c15;
+  background: #f9fafb;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -42,5 +42,13 @@
 /* Selection */
 ::selection {
   background-color: #00d9ff;
-  color: #070c15;
+  color: #ffffff;
+}
+
+/* Garantir que gradientes de texto funcionem */
+.bg-clip-text {
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
 }

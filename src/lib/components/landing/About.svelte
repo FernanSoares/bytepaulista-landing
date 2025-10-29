@@ -74,7 +74,8 @@
             Combinamos <strong class="text-gray-900 font-semibold"
               >design excepcional</strong
             >
-            com <strong class="text-gray-900 font-semibold">código robusto</strong>
+            com
+            <strong class="text-gray-900 font-semibold">código robusto</strong>
             para entregar produtos que geram resultados mensuráveis e duradouros.
           </p>
 

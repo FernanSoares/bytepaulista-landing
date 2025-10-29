@@ -43,7 +43,9 @@
           <span class="relative inline-flex rounded-full h-3 w-3 bg-cyan-600"
           ></span>
         </span>
-        <span class="text-cyan-700 font-semibold">Estamos prontos para ajudar</span>
+        <span class="text-cyan-700 font-semibold"
+          >Estamos prontos para ajudar</span
+        >
       </div>
 
       <!-- Main Heading -->

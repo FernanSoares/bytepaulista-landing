@@ -46,7 +46,9 @@
       </div>
 
       <!-- Main Heading -->
-      <h1 class="text-6xl md:text-8xl font-bold leading-[1.1] tracking-tight text-gray-900">
+      <h1
+        class="text-6xl md:text-8xl font-bold leading-[1.1] tracking-tight text-gray-900"
+      >
         Transformamos<br />
         <span class="text-gray-600">suas ideias em</span><br />
         <span
