@@ -88,15 +88,15 @@
 
         <!-- Services -->
         <div>
-          <h4 class="font-bold text-white mb-6 text-lg">Serviços</h4>
-          <ul class="space-y-3 text-gray-300">
+          <h4 class="font-bold text-gray-900 mb-6 text-lg">Serviços</h4>
+          <ul class="space-y-3 text-gray-700">
             <li>
               <a
                 href="#services"
-                class="hover:text-cyan-400 transition-colors inline-flex items-center gap-2 group"
+                class="hover:text-cyan-600 transition-colors inline-flex items-center gap-2 group"
               >
                 <span
-                  class="w-1 h-1 rounded-full bg-cyan-400 opacity-0 group-hover:opacity-100 transition-opacity"
+                  class="w-1 h-1 rounded-full bg-cyan-600 opacity-0 group-hover:opacity-100 transition-opacity"
                 ></span>
                 Desenvolvimento Web
               </a>
@@ -104,10 +104,10 @@
             <li>
               <a
                 href="#services"
-                class="hover:text-cyan-400 transition-colors inline-flex items-center gap-2 group"
+                class="hover:text-cyan-600 transition-colors inline-flex items-center gap-2 group"
               >
                 <span
-                  class="w-1 h-1 rounded-full bg-cyan-400 opacity-0 group-hover:opacity-100 transition-opacity"
+                  class="w-1 h-1 rounded-full bg-cyan-600 opacity-0 group-hover:opacity-100 transition-opacity"
                 ></span>
                 Apps Mobile
               </a>
@@ -115,10 +115,10 @@
             <li>
               <a
                 href="#services"
-                class="hover:text-cyan-400 transition-colors inline-flex items-center gap-2 group"
+                class="hover:text-cyan-600 transition-colors inline-flex items-center gap-2 group"
               >
                 <span
-                  class="w-1 h-1 rounded-full bg-cyan-400 opacity-0 group-hover:opacity-100 transition-opacity"
+                  class="w-1 h-1 rounded-full bg-cyan-600 opacity-0 group-hover:opacity-100 transition-opacity"
                 ></span>
                 Sistemas Customizados
               </a>
@@ -128,15 +128,15 @@
 
         <!-- Company -->
         <div>
-          <h4 class="font-bold text-white mb-6 text-lg">Empresa</h4>
-          <ul class="space-y-3 text-gray-300">
+          <h4 class="font-bold text-gray-900 mb-6 text-lg">Empresa</h4>
+          <ul class="space-y-3 text-gray-700">
             <li>
               <a
                 href="#about"
-                class="hover:text-cyan-400 transition-colors inline-flex items-center gap-2 group"
+                class="hover:text-cyan-600 transition-colors inline-flex items-center gap-2 group"
               >
                 <span
-                  class="w-1 h-1 rounded-full bg-cyan-400 opacity-0 group-hover:opacity-100 transition-opacity"
+                  class="w-1 h-1 rounded-full bg-cyan-600 opacity-0 group-hover:opacity-100 transition-opacity"
                 ></span>
                 Sobre Nós
               </a>
@@ -144,10 +144,10 @@
             <li>
               <a
                 href="#contact"
-                class="hover:text-cyan-400 transition-colors inline-flex items-center gap-2 group"
+                class="hover:text-cyan-600 transition-colors inline-flex items-center gap-2 group"
               >
                 <span
-                  class="w-1 h-1 rounded-full bg-cyan-400 opacity-0 group-hover:opacity-100 transition-opacity"
+                  class="w-1 h-1 rounded-full bg-cyan-600 opacity-0 group-hover:opacity-100 transition-opacity"
                 ></span>
                 Contato
               </a>
@@ -155,10 +155,10 @@
             <li>
               <a
                 href="#services"
-                class="hover:text-cyan-400 transition-colors inline-flex items-center gap-2 group"
+                class="hover:text-cyan-600 transition-colors inline-flex items-center gap-2 group"
               >
                 <span
-                  class="w-1 h-1 rounded-full bg-cyan-400 opacity-0 group-hover:opacity-100 transition-opacity"
+                  class="w-1 h-1 rounded-full bg-cyan-600 opacity-0 group-hover:opacity-100 transition-opacity"
                 ></span>
                 Portfólio
               </a>
@@ -168,11 +168,11 @@
 
         <!-- Contact -->
         <div>
-          <h4 class="font-bold text-white mb-6 text-lg">Contato</h4>
-          <ul class="space-y-3 text-gray-300">
+          <h4 class="font-bold text-gray-900 mb-6 text-lg">Contato</h4>
+          <ul class="space-y-3 text-gray-700">
             <li class="flex items-start gap-2">
               <svg
-                class="w-5 h-5 text-cyan-400 mt-0.5"
+                class="w-5 h-5 text-cyan-600 mt-0.5"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -195,10 +195,10 @@
             <li>
               <a
                 href="mailto:contato@bytepaulista.com.br"
-                class="hover:text-cyan-400 transition-colors flex items-start gap-2"
+                class="hover:text-cyan-600 transition-colors flex items-start gap-2"
               >
                 <svg
-                  class="w-5 h-5 text-cyan-400 mt-0.5"
+                  class="w-5 h-5 text-cyan-600 mt-0.5"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -216,10 +216,10 @@
             <li>
               <a
                 href="https://wa.me/5511999999999"
-                class="hover:text-cyan-400 transition-colors flex items-start gap-2"
+                class="hover:text-cyan-600 transition-colors flex items-start gap-2"
               >
                 <svg
-                  class="w-5 h-5 text-cyan-400 mt-0.5"
+                  class="w-5 h-5 text-cyan-600 mt-0.5"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                 >
@@ -236,12 +236,12 @@
 
       <!-- Bottom Bar -->
       <div
-        class="pt-8 border-t border-cyan-500/10 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-300"
+        class="pt-8 border-t border-gray-200 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-700"
       >
         <p>© 2025 BytePaulista. Todos os direitos reservados.</p>
         <p class="flex items-center gap-2">
           Desenvolvido com
-          <span class="text-cyan-400 animate-pulse">♥</span>
+          <span class="text-cyan-600 animate-pulse">♥</span>
           em São Paulo
         </p>
       </div>
