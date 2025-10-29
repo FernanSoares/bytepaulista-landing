@@ -113,7 +113,7 @@
       <div class="space-y-6">
         {#each values as value}
           <div
-            class="group relative p-8 bg-gradient-to-br from-gray-50 to-white backdrop-blur-sm border border-gray-200 hover:border-cyan-500 hover:shadow-lg rounded-2xl transition-all duration-300 hover:transform hover:scale-[1.02]"
+            class="group relative p-8 bg-gray-50 backdrop-blur-sm border border-gray-200 hover:border-cyan-500 hover:shadow-lg rounded-2xl transition-all duration-300 hover:transform hover:scale-[1.02]"
           >
             <!-- Gradient Overlay on Hover -->
             <div
