@@ -403,9 +403,9 @@
     </div>
   </div>
 
-  <!-- Scroll Indicator -->
+  <!-- Scroll Indicator - Hidden on mobile -->
   <div
-    class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce"
+    class="hidden md:block absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce"
   >
     <svg
       class="w-6 h-6 text-cyan-600"
