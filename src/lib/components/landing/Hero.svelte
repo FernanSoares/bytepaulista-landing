@@ -76,11 +76,11 @@
   <div class="container mx-auto max-w-7xl relative z-10">
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
       <!-- Left Column - Content -->
-      <div class="space-y-10">
+      <div class="space-y-8">
         <!-- Badge -->
         <div
           in:fly={{ y: 20, duration: 500, delay: 100 }}
-          class="inline-flex items-center gap-2 px-5 py-2.5 bg-gradient-to-r from-cyan-500/10 to-violet-500/10 backdrop-blur-sm border border-cyan-500/30 rounded-full text-sm font-medium shadow-lg hover:shadow-xl transition-shadow animate-badge-float"
+          class="inline-flex items-center gap-2 px-5 py-2.5 bg-gradient-to-r from-cyan-500/15 to-violet-500/15 backdrop-blur-sm border border-cyan-500/30 rounded-full text-sm font-medium shadow-lg hover:shadow-xl transition-shadow animate-badge-float"
         >
           <span class="relative flex h-3 w-3">
             <span
@@ -126,11 +126,11 @@
         <!-- CTAs -->
         <div
           in:fly={{ y: 20, duration: 600, delay: 400 }}
-          class="flex flex-col sm:flex-row gap-5 pt-6"
+          class="flex flex-col sm:flex-row gap-4 pt-4"
         >
           <a
             href="#contact"
-            class="group relative inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-cyan-600 to-violet-600 hover:from-cyan-500 hover:to-violet-500 text-white font-bold rounded-full transition-all transform hover:scale-105 shadow-xl hover:shadow-2xl shadow-cyan-600/30 overflow-hidden"
+            class="group relative inline-flex items-center justify-center px-10 py-4 bg-gradient-to-r from-cyan-600 to-violet-600 hover:from-cyan-500 hover:to-violet-500 text-white font-bold rounded-full transition-all transform hover:scale-105 shadow-xl hover:shadow-2xl shadow-cyan-600/30 overflow-hidden"
           >
             <span class="relative z-10 flex items-center gap-2">
               Iniciar Projeto
@@ -155,7 +155,7 @@
 
           <a
             href="#services"
-            class="inline-flex items-center justify-center px-8 py-4 border-2 border-gray-300 hover:border-cyan-600 hover:bg-cyan-50 text-gray-900 font-bold rounded-full transition-all"
+            class="inline-flex items-center justify-center px-8 py-3.5 border-2 border-gray-300 hover:border-cyan-600 hover:bg-cyan-50 text-gray-900 font-bold rounded-full transition-all"
           >
             Conhecer Serviços
           </a>
@@ -226,7 +226,7 @@
             style="animation-delay: 0s;"
           >
             <div
-              class="group relative p-6 bg-white/80 backdrop-blur-md border border-gray-200 hover:border-cyan-400 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 hover:scale-105"
+              class="group relative p-7 bg-white/80 backdrop-blur-md border border-gray-200 hover:border-cyan-400 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 hover:scale-105"
             >
               <div
                 class="absolute inset-0 bg-gradient-to-br from-cyan-500/10 to-cyan-600/10 opacity-0 group-hover:opacity-100 rounded-2xl transition-opacity duration-300"
@@ -256,7 +256,7 @@
             style="animation-delay: 0.5s;"
           >
             <div
-              class="group relative p-6 bg-white/80 backdrop-blur-md border border-gray-200 hover:border-violet-400 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 hover:scale-105"
+              class="group relative p-5 bg-white/80 backdrop-blur-md border border-gray-200 hover:border-violet-400 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 hover:scale-105"
             >
               <div
                 class="absolute inset-0 bg-gradient-to-br from-violet-500/10 to-violet-600/10 opacity-0 group-hover:opacity-100 rounded-2xl transition-opacity duration-300"
@@ -316,7 +316,7 @@
             style="animation-delay: 1.5s;"
           >
             <div
-              class="group relative p-6 bg-white/80 backdrop-blur-md border border-gray-200 hover:border-cyan-400 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 hover:scale-105"
+              class="group relative p-7 bg-white/80 backdrop-blur-md border border-gray-200 hover:border-cyan-400 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 hover:scale-105"
             >
               <div
                 class="absolute inset-0 bg-gradient-to-br from-cyan-500/10 to-violet-500/10 opacity-0 group-hover:opacity-100 rounded-2xl transition-opacity duration-300"
@@ -346,7 +346,7 @@
             style="animation-delay: 2s;"
           >
             <div
-              class="group relative p-6 bg-white/80 backdrop-blur-md border border-gray-200 hover:border-violet-400 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 hover:scale-105"
+              class="group relative p-5 bg-white/80 backdrop-blur-md border border-gray-200 hover:border-violet-400 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 hover:scale-105"
             >
               <div
                 class="absolute inset-0 bg-gradient-to-br from-violet-500/10 to-mint-500/10 opacity-0 group-hover:opacity-100 rounded-2xl transition-opacity duration-300"
