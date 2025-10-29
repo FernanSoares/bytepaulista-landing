@@ -30,17 +30,17 @@
         <div class="space-y-6">
           <div class="flex items-center gap-3">
             <div
-              class="w-10 h-10 bg-gradient-to-br from-cyan-400 to-violet-500 rounded-lg flex items-center justify-center"
+              class="w-10 h-10 bg-gradient-to-br from-cyan-600 to-violet-600 rounded-lg flex items-center justify-center shadow-sm"
             >
               <span class="text-white font-bold text-xl">B</span>
             </div>
             <span
-              class="text-xl font-bold bg-gradient-to-r from-cyan-400 to-violet-400 bg-clip-text text-transparent"
+              class="text-xl font-bold bg-gradient-to-r from-cyan-600 to-violet-600 bg-clip-text text-transparent"
             >
               BytePaulista
             </span>
           </div>
-          <p class="text-gray-300 leading-relaxed">
+          <p class="text-gray-600 leading-relaxed">
             Transformando ideias em produtos digitais excepcionais desde 2020.
           </p>
           <div class="flex gap-4">
@@ -48,7 +48,7 @@
               href="https://twitter.com"
               target="_blank"
               rel="noopener noreferrer"
-              class="w-10 h-10 flex items-center justify-center rounded-full bg-navy-800 hover:bg-cyan-500/20 border border-cyan-500/10 hover:border-cyan-500/30 text-gray-400 hover:text-cyan-400 transition-all"
+              class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-100 hover:bg-gradient-to-br hover:from-cyan-500/20 hover:to-violet-500/20 border border-gray-200 hover:border-cyan-500/40 text-gray-600 hover:text-cyan-600 transition-all shadow-sm hover:shadow-md"
               aria-label="Twitter"
             >
               <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -61,7 +61,7 @@
               href="https://github.com"
               target="_blank"
               rel="noopener noreferrer"
-              class="w-10 h-10 flex items-center justify-center rounded-full bg-navy-800 hover:bg-cyan-500/20 border border-cyan-500/10 hover:border-cyan-500/30 text-gray-400 hover:text-cyan-400 transition-all"
+              class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-100 hover:bg-gradient-to-br hover:from-cyan-500/20 hover:to-violet-500/20 border border-gray-200 hover:border-cyan-500/40 text-gray-600 hover:text-cyan-600 transition-all shadow-sm hover:shadow-md"
               aria-label="GitHub"
             >
               <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -74,7 +74,7 @@
               href="https://linkedin.com"
               target="_blank"
               rel="noopener noreferrer"
-              class="w-10 h-10 flex items-center justify-center rounded-full bg-navy-800 hover:bg-cyan-500/20 border border-cyan-500/10 hover:border-cyan-500/30 text-gray-400 hover:text-cyan-400 transition-all"
+              class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-100 hover:bg-gradient-to-br hover:from-cyan-500/20 hover:to-violet-500/20 border border-gray-200 hover:border-cyan-500/40 text-gray-600 hover:text-cyan-600 transition-all shadow-sm hover:shadow-md"
               aria-label="LinkedIn"
             >
               <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
