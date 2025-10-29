@@ -124,7 +124,7 @@
               <div class="flex items-center gap-4 mb-4">
                 <div class="text-5xl">{value.icon}</div>
                 <h3
-                  class="text-2xl font-bold text-gray-900 group-hover:bg-gradient-to-r group-hover:{value.gradient} group-hover:bg-clip-text group-hover:text-transparent transition-all duration-300"
+                  class="text-2xl font-bold text-gray-900 group-hover:text-cyan-600 transition-colors duration-300"
                 >
                   {value.title}
                 </h3>
