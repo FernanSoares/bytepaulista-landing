@@ -164,40 +164,40 @@
         <!-- Stats -->
         <div
           in:fly={{ y: 20, duration: 600, delay: 500 }}
-          class="grid grid-cols-3 gap-8 pt-16 border-t border-gray-200"
+          class="grid grid-cols-3 gap-6 pt-8 border-t border-gray-200"
         >
           <div class="space-y-1">
             <div
-              class="text-5xl font-bold bg-gradient-to-r from-cyan-600 to-cyan-500 bg-clip-text text-transparent"
+              class="text-3xl font-bold bg-gradient-to-r from-cyan-600 to-cyan-500 bg-clip-text text-transparent"
             >
               100+
             </div>
             <div
-              class="text-sm text-gray-600 uppercase tracking-wider font-medium"
+              class="text-xs text-gray-600 uppercase tracking-wider font-medium"
             >
               Projetos Entregues
             </div>
           </div>
           <div class="space-y-1">
             <div
-              class="text-5xl font-bold bg-gradient-to-r from-violet-600 to-violet-500 bg-clip-text text-transparent"
+              class="text-3xl font-bold bg-gradient-to-r from-violet-600 to-violet-500 bg-clip-text text-transparent"
             >
               50+
             </div>
             <div
-              class="text-sm text-gray-600 uppercase tracking-wider font-medium"
+              class="text-xs text-gray-600 uppercase tracking-wider font-medium"
             >
               Clientes Satisfeitos
             </div>
           </div>
           <div class="space-y-1">
             <div
-              class="text-5xl font-bold bg-gradient-to-r from-mint-600 to-mint-500 bg-clip-text text-transparent"
+              class="text-3xl font-bold bg-gradient-to-r from-mint-600 to-mint-500 bg-clip-text text-transparent"
             >
               5+
             </div>
             <div
-              class="text-sm text-gray-600 uppercase tracking-wider font-medium"
+              class="text-xs text-gray-600 uppercase tracking-wider font-medium"
             >
               Anos no Mercado
             </div>
