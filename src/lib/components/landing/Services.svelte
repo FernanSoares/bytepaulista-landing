@@ -88,7 +88,7 @@
               <div class="flex items-center gap-3">
                 <span class="text-4xl">{service.icon}</span>
                 <h3
-                  class="text-3xl font-bold text-gray-900 group-hover:bg-gradient-to-r group-hover:{service.gradient} group-hover:bg-clip-text group-hover:text-transparent transition-all duration-300"
+                  class="text-3xl font-bold text-gray-900 group-hover:text-cyan-600 transition-colors duration-300"
                 >
                   {service.title}
                 </h3>
