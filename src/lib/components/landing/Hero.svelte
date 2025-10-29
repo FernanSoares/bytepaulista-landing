@@ -3,7 +3,7 @@
 </script>
 
 <section
-  class="relative min-h-screen flex items-center px-6 md:px-12 overflow-hidden"
+  class="relative min-h-screen flex items-center px-6 md:px-12 overflow-hidden bg-navy-950"
   in:fly={{ y: 20, duration: 500 }}
 >
   <!-- Animated Background -->
