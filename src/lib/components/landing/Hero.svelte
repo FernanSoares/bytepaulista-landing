@@ -47,12 +47,12 @@
 
       <!-- Main Heading -->
       <h1
-        class="text-6xl md:text-8xl font-bold leading-[1.1] tracking-tight text-gray-900"
+        class="text-6xl md:text-8xl font-black leading-[0.95] tracking-tighter text-gray-900"
       >
         Transformamos<br />
-        <span class="text-gray-600">suas ideias em</span><br />
+        <span class="text-gray-500 font-bold">suas ideias em</span><br />
         <span
-          class="bg-gradient-to-r from-cyan-600 via-violet-600 to-mint-600 bg-clip-text text-transparent"
+          class="bg-gradient-to-r from-cyan-600 via-violet-600 to-mint-600 bg-clip-text text-transparent font-black"
         >
           realidade digital
         </span>
