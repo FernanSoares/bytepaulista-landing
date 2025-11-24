@@ -104,19 +104,21 @@
 	<div
 		class="prose prose-lg prose-cyan max-w-none
 			prose-headings:font-bold prose-headings:text-gray-900
-			prose-h1:text-4xl prose-h1:mb-6 prose-h1:mt-12
-			prose-h2:text-3xl prose-h2:mb-4 prose-h2:mt-10 prose-h2:bg-gradient-to-r prose-h2:from-cyan-600 prose-h2:to-violet-600 prose-h2:bg-clip-text prose-h2:text-transparent
-			prose-h3:text-2xl prose-h3:mb-3 prose-h3:mt-8
-			prose-p:text-gray-700 prose-p:leading-relaxed prose-p:mb-6
+			prose-h1:text-4xl prose-h1:mb-8 prose-h1:mt-16
+			prose-h2:text-3xl prose-h2:mb-6 prose-h2:mt-12 prose-h2:bg-gradient-to-r prose-h2:from-cyan-600 prose-h2:to-violet-600 prose-h2:bg-clip-text prose-h2:text-transparent
+			prose-h3:text-2xl prose-h3:mb-5 prose-h3:mt-10
+			prose-p:text-gray-700 prose-p:leading-relaxed prose-p:mb-6 prose-p:mt-4
 			prose-a:text-cyan-600 prose-a:font-semibold prose-a:no-underline hover:prose-a:text-cyan-700 hover:prose-a:underline
 			prose-strong:text-gray-900 prose-strong:font-bold
 			prose-code:text-cyan-600 prose-code:bg-cyan-50 prose-code:px-2 prose-code:py-1 prose-code:rounded prose-code:font-mono prose-code:text-sm prose-code:before:content-[''] prose-code:after:content-['']
-			prose-pre:bg-gray-900 prose-pre:rounded-xl prose-pre:shadow-lg prose-pre:border prose-pre:border-gray-800
-			prose-ul:list-disc prose-ul:ml-6 prose-ul:mb-6
-			prose-ol:list-decimal prose-ol:ml-6 prose-ol:mb-6
-			prose-li:text-gray-700 prose-li:mb-2
-			prose-blockquote:border-l-4 prose-blockquote:border-cyan-500 prose-blockquote:pl-4 prose-blockquote:italic prose-blockquote:text-gray-700
-			prose-img:rounded-xl prose-img:shadow-lg prose-img:my-8"
+			prose-pre:bg-gray-900 prose-pre:rounded-xl prose-pre:shadow-lg prose-pre:border prose-pre:border-gray-800 prose-pre:my-8
+			prose-ul:list-disc prose-ul:ml-6 prose-ul:mb-8 prose-ul:mt-4
+			prose-ol:list-decimal prose-ol:ml-6 prose-ol:mb-8 prose-ol:mt-4
+			prose-li:text-gray-700 prose-li:mb-3
+			prose-blockquote:border-l-4 prose-blockquote:border-cyan-500 prose-blockquote:pl-6 prose-blockquote:italic prose-blockquote:text-gray-700 prose-blockquote:my-8 prose-blockquote:py-2
+			prose-img:rounded-xl prose-img:shadow-lg prose-img:my-10
+			prose-hr:border-gray-300 prose-hr:my-12
+			prose-table:my-8"
 		in:fly={{ y: 20, duration: 500, delay: 200 }}
 	>
 		<svelte:component this={data.content} />

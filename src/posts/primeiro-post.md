@@ -24,21 +24,25 @@ Este é o nosso espaço para compartilhar conhecimento, experiências e insights
 Nosso blog será o seu destino para conteúdos de alta qualidade sobre:
 
 ### 💻 Desenvolvimento Web
+
 - **Tutoriais práticos** com código real
 - **Arquitetura de software** e design patterns
 - **Boas práticas** e code reviews
 
 ### 🚀 Tecnologias Emergentes
+
 - **Análises aprofundadas** de novas ferramentas
 - **Comparativos** entre frameworks e bibliotecas
 - **Tendências do mercado** e previsões
 
 ### 📊 Cases de Sucesso
+
 - **Projetos reais** que desenvolvemos
 - **Desafios e soluções** encontradas
 - **Métricas e resultados** alcançados
 
 ### 🎯 Dicas e Truques
+
 - **Produtividade** para desenvolvedores
 - **Ferramentas** que usamos diariamente
 - **Workflows** otimizados
@@ -54,7 +58,7 @@ const technologies = {
   frontend: ["SvelteKit", "React", "Next.js", "Tailwind CSS"],
   backend: ["Node.js", "Python", "PostgreSQL", "MongoDB"],
   cloud: ["Vercel", "AWS", "Google Cloud"],
-  tools: ["Git", "Docker", "VS Code"]
+  tools: ["Git", "Docker", "VS Code"],
 };
 
 console.log("Transformando ideias em realidade! 🚀");
@@ -90,29 +94,33 @@ Fique atento! Em breve publicaremos:
 
 ### 📝 Tutoriais Completos
 
-1. **Tutorial completo de SvelteKit** - Do zero ao deploy
-   - Configuração inicial
-   - Roteamento e layouts
-   - SSR e SSG
-   - Deploy em produção
+**1. Tutorial completo de SvelteKit** - Do zero ao deploy
 
-2. **Como criar uma API REST escalável** - Boas práticas
-   - Estrutura de projeto
-   - Autenticação e autorização
-   - Validação de dados
-   - Documentação com Swagger
+- Configuração inicial
+- Roteamento e layouts
+- SSR e SSG
+- Deploy em produção
 
-3. **Design System com Tailwind CSS** - Guia prático
-   - Configuração avançada
-   - Componentes reutilizáveis
-   - Temas e customização
-   - Performance
+**2. Como criar uma API REST escalável** - Boas práticas
 
-4. **Performance Web** - Otimizando seus projetos
-   - Lazy loading
-   - Code splitting
-   - Otimização de imagens
-   - Web Vitals
+- Estrutura de projeto
+- Autenticação e autorização
+- Validação de dados
+- Documentação com Swagger
+
+**3. Design System com Tailwind CSS** - Guia prático
+
+- Configuração avançada
+- Componentes reutilizáveis
+- Temas e customização
+- Performance
+
+**4. Performance Web** - Otimizando seus projetos
+
+- Lazy loading
+- Code splitting
+- Otimização de imagens
+- Web Vitals
 
 ---
 
