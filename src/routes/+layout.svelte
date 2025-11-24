@@ -1,5 +1,7 @@
 <script lang="ts">
   import "../app.postcss";
+  import Navbar from "$lib/components/landing/Navbar.svelte";
+  import Footer from "$lib/components/landing/Footer.svelte";
 
   let { children } = $props();
 </script>
@@ -13,5 +15,11 @@
 </svelte:head>
 
 <div class="min-h-screen bg-white text-gray-900">
-  {@render children()}
+  <Navbar />
+  
+  <main>
+    {@render children()}
+  </main>
+  
+  <Footer />
 </div>
