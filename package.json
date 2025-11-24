@@ -7,7 +7,9 @@
 		"build": "vite build",
 		"preview": "vite preview",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
-		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch"
+		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+		"sanity": "sanity dev",
+		"sanity:deploy": "sanity deploy"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "^3.0.0",
@@ -30,5 +32,12 @@
 	"type": "module",
 	"engines": {
 		"node": ">=18.0.0"
+	},
+	"dependencies": {
+		"@portabletext/svelte": "^3.0.1",
+		"@sanity/client": "^7.13.0",
+		"@sanity/image-url": "^1.2.0",
+		"@sanity/vision": "^4.18.0",
+		"sanity": "^4.18.0"
 	}
 }
