@@ -29,4 +29,5 @@ export async function GET() {
 	return json(posts);
 }
 
-export const prerender = true;
+// Removido prerender para permitir atualizações via webhook
+// Os posts agora serão buscados dinamicamente do Sanity

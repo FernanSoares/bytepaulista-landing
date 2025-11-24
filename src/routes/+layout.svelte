@@ -7,13 +7,13 @@
 </script>
 
 <svelte:head>
-	<title>BytePaulista - Transformando Ideias em Realidade Digital</title>
-	<meta
-		name="description"
-		content="Somos especialistas em desenvolvimento web, apps mobile e sistemas customizados. Sua parceira em inovação tecnológica."
-	/>
-	<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-	<link rel="alternate icon" type="image/png" href="/favicon.png" />
+  <title>BytePaulista - Transformando Ideias em Realidade Digital</title>
+  <meta
+    name="description"
+    content="Somos especialistas em desenvolvimento web, apps mobile e sistemas customizados. Sua parceira em inovação tecnológica."
+  />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="alternate icon" type="image/png" href="/favicon.png" />
 </svelte:head>
 
 <div class="min-h-screen bg-white text-gray-900">
