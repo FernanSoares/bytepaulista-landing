@@ -4,6 +4,10 @@
   import { fly } from "svelte/transition";
 
   export let data;
+  
+  // Debug: ver os dados
+  console.log("📊 Dados do blog:", data);
+  console.log("📝 Posts:", data.posts);
 </script>
 
 <svelte:head>
@@ -93,7 +97,7 @@
         <div
           class="text-4xl font-bold bg-gradient-to-r from-cyan-600 to-cyan-500 bg-clip-text text-transparent"
         >
-          {data.posts.length}
+          {data?.posts?.length || 0}
         </div>
         <div class="text-sm text-gray-600 uppercase tracking-wider font-medium">
           Artigos
@@ -103,7 +107,7 @@
         <div
           class="text-4xl font-bold bg-gradient-to-r from-violet-600 to-violet-500 bg-clip-text text-transparent"
         >
-          {[...new Set(data.posts.flatMap((p) => p.categories))].length}
+          {data?.posts ? [...new Set(data.posts.flatMap((p) => p.categories || []))].length : 0}
         </div>
         <div class="text-sm text-gray-600 uppercase tracking-wider font-medium">
           Categorias
@@ -116,10 +120,13 @@
 <!-- Posts Grid -->
 <section class="py-16 px-6 bg-gradient-to-br from-gray-50 via-white to-cyan-50">
   <div class="container mx-auto max-w-6xl">
-    {#if data.posts.length === 0}
+    {#if !data || !data.posts || data.posts.length === 0}
       <div class="text-center py-20">
         <p class="text-2xl text-gray-500">
           Nenhum post publicado ainda. Em breve!
+        </p>
+        <p class="text-sm text-gray-400 mt-4">
+          Debug: {data ? `${data.posts?.length || 0} posts encontrados` : 'Nenhum dado'}
         </p>
       </div>
     {:else}
