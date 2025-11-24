@@ -4,7 +4,7 @@
   import { fly } from "svelte/transition";
 
   export let data;
-  
+
   // Debug: ver os dados
   console.log("📊 Dados do blog:", data);
   console.log("📝 Posts:", data.posts);
@@ -107,7 +107,9 @@
         <div
           class="text-4xl font-bold bg-gradient-to-r from-violet-600 to-violet-500 bg-clip-text text-transparent"
         >
-          {data?.posts ? [...new Set(data.posts.flatMap((p) => p.categories || []))].length : 0}
+          {data?.posts
+            ? [...new Set(data.posts.flatMap((p) => p.categories || []))].length
+            : 0}
         </div>
         <div class="text-sm text-gray-600 uppercase tracking-wider font-medium">
           Categorias
@@ -126,7 +128,9 @@
           Nenhum post publicado ainda. Em breve!
         </p>
         <p class="text-sm text-gray-400 mt-4">
-          Debug: {data ? `${data.posts?.length || 0} posts encontrados` : 'Nenhum dado'}
+          Debug: {data
+            ? `${data.posts?.length || 0} posts encontrados`
+            : "Nenhum dado"}
         </p>
       </div>
     {:else}

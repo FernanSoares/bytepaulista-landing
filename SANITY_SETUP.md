@@ -113,6 +113,7 @@ npm run sanity:deploy
 ```
 
 Você receberá uma URL tipo:
+
 ```
 https://bytepaulista.sanity.studio/
 ```
@@ -199,6 +200,7 @@ Após configurar, você terá:
 ## ❓ **Problemas Comuns**
 
 ### **Studio não abre:**
+
 ```bash
 # Mata processos rodando na porta 3333
 lsof -ti:3333 | xargs kill -9
@@ -208,12 +210,14 @@ npm run sanity
 ```
 
 ### **Erro de autenticação:**
+
 ```bash
 # Faz login novamente
 npx sanity login
 ```
 
 ### **Posts não aparecem no site:**
+
 - Verifique se o post está marcado como "Publicado"
 - Verifique o `.env` com o Project ID correto
 - Reinicie o servidor (`npm run dev`)
@@ -229,4 +233,3 @@ npx sanity login
 ---
 
 **Bom trabalho! Agora você tem um CMS profissional! 🎉**
-

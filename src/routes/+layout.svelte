@@ -16,10 +16,10 @@
 
 <div class="min-h-screen bg-white text-gray-900">
   <Navbar />
-  
+
   <main>
     {@render children()}
   </main>
-  
+
   <Footer />
 </div>

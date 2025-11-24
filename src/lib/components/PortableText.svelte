@@ -1,80 +1,99 @@
 <script lang="ts">
-	import { PortableText as PT } from "@portabletext/svelte";
-	import type { PortableTextBlock } from "@portabletext/types";
+  import { PortableText as PT } from "@portabletext/svelte";
+  import type { PortableTextBlock } from "@portabletext/types";
 
-	export let value: PortableTextBlock[];
-
-	// Componentes customizados para cada tipo de bloco
-	const components = {
-		block: {
-			h1: ({ children }: any) => `<h1 class="text-4xl font-bold mb-8 mt-16 text-gray-900">${children}</h1>`,
-			h2: ({ children }: any) =>
-				`<h2 class="text-3xl font-bold mb-6 mt-12 bg-gradient-to-r from-cyan-600 to-violet-600 bg-clip-text text-transparent">${children}</h2>`,
-			h3: ({ children }: any) => `<h3 class="text-2xl font-bold mb-5 mt-10 text-gray-900">${children}</h3>`,
-			h4: ({ children }: any) => `<h4 class="text-xl font-bold mb-4 mt-8 text-gray-900">${children}</h4>`,
-			normal: ({ children }: any) => `<p class="text-gray-700 leading-relaxed mb-6 mt-4">${children}</p>`,
-			blockquote: ({ children }: any) =>
-				`<blockquote class="border-l-4 border-cyan-500 pl-6 italic text-gray-700 my-8 py-2">${children}</blockquote>`,
-		},
-		list: {
-			bullet: ({ children }: any) => `<ul class="list-disc ml-6 mb-8 mt-4">${children}</ul>`,
-			number: ({ children }: any) => `<ol class="list-decimal ml-6 mb-8 mt-4">${children}</ol>`,
-		},
-		listItem: {
-			bullet: ({ children }: any) => `<li class="text-gray-700 mb-3">${children}</li>`,
-			number: ({ children }: any) => `<li class="text-gray-700 mb-3">${children}</li>`,
-		},
-		marks: {
-			strong: ({ children }: any) => `<strong class="text-gray-900 font-bold">${children}</strong>`,
-			em: ({ children }: any) => `<em class="italic">${children}</em>`,
-			code: ({ children }: any) =>
-				`<code class="text-cyan-600 bg-cyan-50 px-2 py-1 rounded font-mono text-sm">${children}</code>`,
-			link: ({ children, value }: any) =>
-				`<a href="${value?.href}" class="text-cyan-600 font-semibold no-underline hover:text-cyan-700 hover:underline">${children}</a>`,
-		},
-		types: {
-			image: ({ value }: any) =>
-				`<img src="${value.asset?.url}" alt="${value.alt || ""}" class="rounded-xl shadow-lg my-10 w-full" />`,
-			code: ({ value }: any) =>
-				`<pre class="bg-gray-900 rounded-xl shadow-lg border border-gray-800 my-8 p-6 overflow-x-auto"><code class="language-${value.language || "text"} text-sm text-gray-100">${value.code}</code></pre>`,
-		},
-	};
+  export let value: PortableTextBlock[];
 </script>
 
-<div class="portable-text">
-	<PT {value} {components} />
+<div class="portable-text prose prose-lg max-w-none">
+  <PT {value} />
 </div>
 
 <style>
-	:global(.portable-text) {
-		@apply max-w-none;
-	}
+  /* Customização dos headings */
+  :global(.portable-text h1) {
+    @apply text-4xl font-bold mb-8 mt-16 text-gray-900;
+  }
 
-	/* Adiciona syntax highlighting ao código */
-	:global(.portable-text pre code) {
-		@apply block text-sm;
-		font-family: "Fira Code", "Courier New", monospace;
-	}
+  :global(.portable-text h2) {
+    @apply text-3xl font-bold mb-6 mt-12 bg-gradient-to-r from-cyan-600 to-violet-600 bg-clip-text text-transparent;
+  }
 
-	/* Melhora listas */
-	:global(.portable-text ul),
-	:global(.portable-text ol) {
-		@apply space-y-2;
-	}
+  :global(.portable-text h3) {
+    @apply text-2xl font-bold mb-5 mt-10 text-gray-900;
+  }
 
-	/* Espaçamento de parágrafos dentro de listas */
-	:global(.portable-text li > p) {
-		@apply mb-2 mt-0;
-	}
+  :global(.portable-text h4) {
+    @apply text-xl font-bold mb-4 mt-8 text-gray-900;
+  }
 
-	/* Remove margem do último elemento */
-	:global(.portable-text > *:last-child) {
-		@apply mb-0;
-	}
+  /* Parágrafos */
+  :global(.portable-text p) {
+    @apply text-gray-700 leading-relaxed mb-6 mt-4;
+  }
 
-	/* Espaçamento de HR */
-	:global(.portable-text hr) {
-		@apply border-gray-300 my-12;
-	}
+  /* Blockquotes */
+  :global(.portable-text blockquote) {
+    @apply border-l-4 border-cyan-500 pl-6 italic text-gray-700 my-8 py-2;
+  }
+
+  /* Listas */
+  :global(.portable-text ul) {
+    @apply list-disc ml-6 mb-8 mt-4 space-y-2;
+  }
+
+  :global(.portable-text ol) {
+    @apply list-decimal ml-6 mb-8 mt-4 space-y-2;
+  }
+
+  :global(.portable-text li) {
+    @apply text-gray-700 mb-3;
+  }
+
+  :global(.portable-text li > p) {
+    @apply mb-2 mt-0;
+  }
+
+  /* Marks - strong, em, code */
+  :global(.portable-text strong) {
+    @apply text-gray-900 font-bold;
+  }
+
+  :global(.portable-text em) {
+    @apply italic;
+  }
+
+  :global(.portable-text code) {
+    @apply text-cyan-600 bg-cyan-50 px-2 py-1 rounded font-mono text-sm;
+  }
+
+  /* Links */
+  :global(.portable-text a) {
+    @apply text-cyan-600 font-semibold no-underline hover:text-cyan-700 hover:underline;
+  }
+
+  /* Imagens */
+  :global(.portable-text img) {
+    @apply rounded-xl shadow-lg my-10 w-full;
+  }
+
+  /* Blocos de código */
+  :global(.portable-text pre) {
+    @apply bg-gray-900 rounded-xl shadow-lg border border-gray-800 my-8 p-6 overflow-x-auto;
+  }
+
+  :global(.portable-text pre code) {
+    @apply block text-sm text-gray-100;
+    font-family: "Fira Code", "Courier New", monospace;
+  }
+
+  /* HR */
+  :global(.portable-text hr) {
+    @apply border-gray-300 my-12;
+  }
+
+  /* Remove margem do último elemento */
+  :global(.portable-text > *:last-child) {
+    @apply mb-0;
+  }
 </style>
-

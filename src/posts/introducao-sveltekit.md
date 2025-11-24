@@ -32,7 +32,7 @@ SvelteKit não usa Virtual DOM. Em vez disso, ele **compila** seus componentes p
 // Componente Svelte - Sintaxe limpa e intuitiva
 <script>
   let count = 0;
-  
+
   function increment() {
     count += 1;
   }
@@ -59,7 +59,7 @@ import { useState } from 'react';
 
 function Counter() {
   const [count, setCount] = useState(0);
-  
+
   return (
     <button onClick={() => setCount(count + 1)}>
       Contador: {count}
@@ -88,14 +88,15 @@ SvelteKit oferece **Server-Side Rendering** e **Static Site Generation** nativam
 ```typescript
 // +page.server.ts
 export async function load() {
-  const response = await fetch('https://api.example.com/data');
+  const response = await fetch("https://api.example.com/data");
   const data = await response.json();
-  
+
   return { data };
 }
 ```
 
 **Benefícios:**
+
 - ✅ SEO otimizado
 - ✅ Performance máxima
 - ✅ Experiência do usuário superior
@@ -180,13 +181,13 @@ SvelteKit torna formulários **progressivamente aprimorados**:
 export const actions = {
   default: async ({ request }) => {
     const data = await request.formData();
-    const email = data.get('email');
-    
+    const email = data.get("email");
+
     // Processar dados (salvar no banco, enviar email, etc.)
     await saveToDatabase(email);
-    
+
     return { success: true };
-  }
+  },
 };
 ```
 
@@ -200,7 +201,7 @@ Crie APIs RESTful facilmente:
 
 ```typescript
 // src/routes/api/users/+server.ts
-import { json } from '@sveltejs/kit';
+import { json } from "@sveltejs/kit";
 
 export async function GET() {
   const users = await db.users.findMany();
@@ -220,13 +221,13 @@ export async function POST({ request }) {
 
 ## 📊 Comparação com Outros Frameworks
 
-| Recurso | SvelteKit | Next.js | Nuxt.js |
-|---------|-----------|---------|---------|
-| **Bundle Size** | 🟢 Menor | 🟡 Médio | 🟡 Médio |
-| **Performance** | 🟢 Excepcional | 🟢 Ótima | 🟢 Ótima |
-| **Learning Curve** | 🟢 Fácil | 🟡 Moderada | 🟡 Moderada |
-| **Sintaxe** | 🟢 Limpa | 🟡 Verbosa | 🟢 Limpa |
-| **SSR/SSG** | ✅ Built-in | ✅ Built-in | ✅ Built-in |
+| Recurso            | SvelteKit      | Next.js     | Nuxt.js     |
+| ------------------ | -------------- | ----------- | ----------- |
+| **Bundle Size**    | 🟢 Menor       | 🟡 Médio    | 🟡 Médio    |
+| **Performance**    | 🟢 Excepcional | 🟢 Ótima    | 🟢 Ótima    |
+| **Learning Curve** | 🟢 Fácil       | 🟡 Moderada | 🟡 Moderada |
+| **Sintaxe**        | 🟢 Limpa       | 🟡 Verbosa  | 🟢 Limpa    |
+| **SSR/SSG**        | ✅ Built-in    | ✅ Built-in | ✅ Built-in |
 
 ---
 
