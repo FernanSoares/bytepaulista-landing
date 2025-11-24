@@ -2,29 +2,31 @@
 	import { formatDate } from "$lib/utils";
 	import { url } from "$lib/config";
 	import { fly } from "svelte/transition";
+	import { PortableText } from "@portabletext/svelte";
 	import type { PageData } from "./$types";
 
 	export let data: PageData;
+	const { post } = data;
 </script>
 
 <!-- SEO -->
 <svelte:head>
-	<title>{data.meta.title} - BytePaulista Blog</title>
+	<title>{post.title} - BytePaulista Blog</title>
 
-	<link rel="canonical" href={`${url}/blog/${data.meta.slug}`} />
-	<meta name="description" content={data.meta.description} />
+	<link rel="canonical" href={`${url}/blog/${post.slug}`} />
+	<meta name="description" content={post.description} />
 
 	<meta property="og:type" content="article" />
-	<meta property="og:url" content={`${url}/blog/${data.meta.slug}`} />
-	<meta property="og:title" content={data.meta.title} />
-	<meta property="og:description" content={data.meta.description} />
+	<meta property="og:url" content={`${url}/blog/${post.slug}`} />
+	<meta property="og:title" content={post.title} />
+	<meta property="og:description" content={post.description} />
 	<meta property="og:site_name" content="BytePaulista Blog" />
-	<meta property="og:image" content={data.meta.image ? `${url}${data.meta.image}` : `${url}/blog-banner.webp`} />
+	<meta property="og:image" content={post.mainImage ? post.mainImage : `${url}/blog-banner.webp`} />
 
-	<meta name="twitter:title" content={data.meta.title} />
-	<meta name="twitter:description" content={data.meta.description} />
+	<meta name="twitter:title" content={post.title} />
+	<meta name="twitter:description" content={post.description} />
 	<meta name="twitter:card" content="summary_large_image" />
-	<meta name="twitter:image:src" content={data.meta.image ? `${url}${data.meta.image}` : `${url}/blog-banner.webp`} />
+	<meta name="twitter:image:src" content={post.mainImage ? post.mainImage : `${url}/blog-banner.webp`} />
 
 	<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
 </svelte:head>
@@ -58,40 +60,50 @@
 			<!-- Header -->
 			<header class="mb-12" in:fly={{ y: 20, duration: 500 }}>
 				<!-- Categories -->
-				<div class="flex flex-wrap gap-2 mb-6">
-					{#each data.meta.categories as category}
-						<span
-							class="px-4 py-2 text-sm font-semibold bg-gradient-to-r from-cyan-100 to-violet-100 text-cyan-700 rounded-full border border-cyan-200"
-						>
-							#{category}
-						</span>
-					{/each}
-				</div>
+				{#if post.categories && post.categories.length > 0}
+					<div class="flex flex-wrap gap-2 mb-6">
+						{#each post.categories as category}
+							<span
+								class="px-4 py-2 text-sm font-semibold bg-gradient-to-r from-cyan-100 to-violet-100 text-cyan-700 rounded-full border border-cyan-200"
+							>
+								#{category}
+							</span>
+						{/each}
+					</div>
+				{/if}
 
 				<!-- Title -->
 				<h1 class="text-4xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-					{data.meta.title}
+					{post.title}
 				</h1>
 
 				<!-- Meta Info -->
 				<div class="flex items-center gap-4 mb-8">
-					<div
-						class="w-12 h-12 bg-gradient-to-br from-cyan-600 to-violet-600 rounded-full flex items-center justify-center"
-					>
-						<span class="text-white font-bold">B</span>
-					</div>
+					{#if post.author?.image}
+						<img
+							src={post.author.image}
+							alt={post.author.name}
+							class="w-12 h-12 rounded-full object-cover"
+						/>
+					{:else}
+						<div
+							class="w-12 h-12 bg-gradient-to-br from-cyan-600 to-violet-600 rounded-full flex items-center justify-center"
+						>
+							<span class="text-white font-bold">B</span>
+						</div>
+					{/if}
 					<div>
-						<p class="font-semibold text-gray-900">BytePaulista</p>
+						<p class="font-semibold text-gray-900">{post.author?.name || "BytePaulista"}</p>
 						<p class="text-sm text-gray-600">
-							Publicado em {formatDate(data.meta.date)}
+							Publicado em {formatDate(post.publishedAt)}
 						</p>
 					</div>
 				</div>
 
 				<!-- Featured Image -->
-				{#if data.meta.image}
+				{#if post.mainImage}
 					<div class="relative rounded-2xl overflow-hidden shadow-2xl">
-						<img src={data.meta.image} alt={data.meta.title} class="w-full h-auto" />
+						<img src={post.mainImage} alt={post.title} class="w-full h-auto" />
 						<div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
 					</div>
 				{/if}
@@ -118,7 +130,9 @@
 					prose-table:my-8"
 				in:fly={{ y: 20, duration: 500, delay: 200 }}
 			>
-				<svelte:component this={data.content} />
+				{#if post.body}
+					<PortableText value={post.body} />
+				{/if}
 			</div>
 
 			<!-- Footer -->
