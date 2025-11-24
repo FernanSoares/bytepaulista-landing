@@ -7,7 +7,7 @@ export default defineConfig({
 	name: "default",
 	title: "BytePaulista Blog",
 
-	projectId: "seu-project-id", // Você vai obter isso após criar o projeto
+	projectId: "a6xg83wz",
 	dataset: "production",
 
 	plugins: [structureTool(), visionTool()],
