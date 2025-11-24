@@ -7,10 +7,9 @@ export const load: PageLoad = async ({ params }) => {
 
 		return {
 			content: post.default,
-			meta: post.metadata,
+			meta: post.metadata as Post,
 		};
 	} catch (e) {
-		throw error(404, `Post "${params.slug}" não encontrado`);
+		throw error(404, `Post não encontrado: ${params.slug}`);
 	}
 };
-

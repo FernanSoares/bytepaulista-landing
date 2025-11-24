@@ -1,8 +1,7 @@
-import type { PageServerLoad } from "./$types";
+import type { ServerLoadEvent } from "@sveltejs/kit";
 
-export const load: PageServerLoad = async ({ fetch }) => {
+export async function load({ fetch }: ServerLoadEvent) {
 	const response = await fetch("/api/posts");
 	const posts: Post[] = await response.json();
 	return { posts };
-};
-
+}
