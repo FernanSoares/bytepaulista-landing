@@ -1,0 +1,46 @@
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Gradient -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f9fafb;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e0f9ff;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00b8d9;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#8b5cf6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#10b981;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGradient)"/>
+  
+  <!-- Decorative Circles -->
+  <circle cx="100" cy="100" r="80" fill="#00d9ff" opacity="0.1"/>
+  <circle cx="1100" cy="500" r="120" fill="#8b5cf6" opacity="0.1"/>
+  <circle cx="600" cy="300" r="60" fill="#10b981" opacity="0.15"/>
+  
+  <!-- Grid Pattern -->
+  <pattern id="grid" width="80" height="80" patternUnits="userSpaceOnUse">
+    <path d="M 80 0 L 0 0 0 80" fill="none" stroke="#00d9ff" stroke-width="0.5" opacity="0.1"/>
+  </pattern>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+  
+  <!-- Main Text -->
+  <text x="600" y="280" font-family="Inter, -apple-system, sans-serif" font-size="72" font-weight="bold" text-anchor="middle" fill="url(#textGradient)">
+    BytePaulista
+  </text>
+  
+  <!-- Subtitle -->
+  <text x="600" y="350" font-family="Inter, -apple-system, sans-serif" font-size="32" text-anchor="middle" fill="#374151">
+    Blog & Insights
+  </text>
+  
+  <!-- Decorative Line -->
+  <rect x="400" y="380" width="400" height="4" fill="url(#textGradient)" rx="2"/>
+  
+  <!-- Icon/Emoji -->
+  <text x="600" y="480" font-size="64" text-anchor="middle">🚀</text>
+</svg>
+

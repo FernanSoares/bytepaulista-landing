@@ -50,6 +50,15 @@
           ></span>
         </a>
         <a
+          href="/blog"
+          class="text-gray-700 hover:text-cyan-600 transition-colors font-medium relative group"
+        >
+          Blog
+          <span
+            class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-cyan-600 to-violet-600 group-hover:w-full transition-all duration-300"
+          ></span>
+        </a>
+        <a
           href="#contact"
           class="px-6 py-2.5 bg-gradient-to-r from-cyan-600 to-violet-600 hover:from-cyan-500 hover:to-violet-500 text-white font-semibold rounded-full transition-all transform hover:scale-105 shadow-lg shadow-cyan-600/20"
         >
@@ -103,7 +112,7 @@
       <div class="md:hidden py-6 border-t border-gray-200 animate-fade-in">
         <div class="flex flex-col gap-4">
           <a
-            href="#"
+            href="/"
             onclick={closeMenu}
             class="text-gray-700 hover:text-cyan-600 transition-colors font-medium py-3 px-4 hover:bg-cyan-50 rounded-lg"
           >
@@ -122,6 +131,13 @@
             class="text-gray-700 hover:text-cyan-600 transition-colors font-medium py-3 px-4 hover:bg-cyan-50 rounded-lg"
           >
             Sobre
+          </a>
+          <a
+            href="/blog"
+            onclick={closeMenu}
+            class="text-gray-700 hover:text-cyan-600 transition-colors font-medium py-3 px-4 hover:bg-cyan-50 rounded-lg"
+          >
+            Blog
           </a>
           <a
             href="#contact"
